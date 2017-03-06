@@ -1,13 +1,22 @@
 <html>
-  <head></head>
+  <head>
+    <style>
+      body {
+        background-color: <%= background %>;
+      }
+      * {
+        text-align: center;
+      }
+
+    </style>
+  </head>
   <body>
+    <h1>Welcome to the Number Guessing Game</h1>
+    <h2><%= response %></h2>
     <form>
       <input type='text' name='guess'/>
       <input type='submit' name='Give it a whirl!' />
     </form>
-    <h1>
-      <%= response %>
-    </h1>
-      <p><%= number%></p>
+      <p><%= number%> </p>
   </body>
 </html>
